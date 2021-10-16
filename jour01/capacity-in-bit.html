@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertion capacité Giga octet en bits </title>
+    <script>
+        var capacity = prompt("enter your capacity in Giga ")
+        const oneOctet = 8 //bits
+        const oneGiga = 1e+9 // bytes
+        // calcul convertion
+
+        var bits = capacity * oneOctet * oneGiga 
+        console.log(bits);
+        document.write(bits.toExponential(4));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
