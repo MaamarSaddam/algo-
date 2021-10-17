@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation des saisies aves les condition</title>
+
+    <script>
+
+        // Les données
+        var ht = prompt("Le montant");
+        var taux = prompt("Le taux de tva");
+        var saisieValide = true;
+
+        // la convertion des saisies en nombre
+        ht = parseFloat(ht);
+        taux = parseFloat(taux);
+        // test des condition 
+        if (isNaN(ht)) {
+            console.log("la saisie est incorrecte");
+            saisieValide = false;
+        }
+        if (isNaN(taux)) {
+            console.log("la saisie est incorrecte");
+            saisieValide = false;
+        }
+
+
+        // le calcul si la saisie est valide 
+        if (saisieValide == true) {
+
+            //le calcul
+            var ttc = ht * 1 + (ht * taux / 100);
+            // la sortie 
+            console.log(ttc);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
